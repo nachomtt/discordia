@@ -1,285 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/9465c308c4.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Discord</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9465c308c4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <title>Discord</title>
-</head>
+	<body>
+		<nav>
+			<div>
+				<a href="">
+					<h1>Discordia</h1>
+				</a>
+			</div>
+			<div class="minMaxClose">
+				<a href="">
+					<i class="fa fa-window-minimize fa-2x" id="minimizeApp"></i>
+				</a>
+				<a href="">
+					<i class="fa-regular fa-square fa-2x" id="maximizeApp"></i>
+				</a>
+				<a href="">
+					<i class="fa-solid fa-xmark fa-2x" id="closeApp"></i>
+				</a>
+			</div>
+		</nav>
+		<main>
+			<div class="sideBarContainer">
+				<div class="homeAndCallContainer">
+					<a href="">
+						<img
+							src="./assets/logofeliz.jpg"
+							alt="Discord Home Logo"
+							class="homeIcon"
+						/>
+					</a>
+					<a href="">
+						<img
+							src="./assets/callImg.jpg"
+							alt="Call Profile Picture"
+							class="homeIcon"
+						/>
+					</a>
+				</div>
+				<div class="centerX">
+					<div class="sideBarDivisor"></div>
+				</div>
+				<div class="serversContainer">
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP">1</p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP">12</p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP">123</p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP">1k+</p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP"></p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP"></p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP"></p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP"></p>
+						</div>
+					</a>
+					<a href="" class="server">
+						<img
+							src="./assets/server1.jpg"
+							alt="Server Picture"
+							class="serverIcon"
+						/>
+						<div class="serverNotification">
+							<p class="servNotifP"></p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="chatsContainer">
+				<div class="searchContainer">
+					<input
+						type="text"
+						name="searchConver"
+						id="searchConver"
+						placeholder="Find or start a conversation"
+						spellcheck="false"
+					/>
+				</div>
+				<div class="profileContainer">
+					<a href="" class="profileInfo">
+						<img
+							src="./assets/callImg.jpg"
+							alt="Server Picture"
+							class="chatPhoto"
+						/>
+						<div class="chatOnline">
+							<p>-</p>
+						</div>
+						<div class="profileUser">
+							<h3>Nachota</h3>
+							<p>#8755</p>
+						</div>
+					</a>
+					<div class="callSettings">
+						<i class="fa-solid fa-microphone fa-2x"></i>
+						<i class="fa-solid fa-headphones fa-2x"></i>
+						<i class="fa-solid fa-gear fa-2x"></i>
+					</div>
+				</div>
+				<div class="underSearch">
+					<div class="friendsTurbo">
+						<div class="friends">
+							<i class="fa-solid fa-person-rifle fa-2x" id="friendsIcon"></i>
+							<p>Friends</p>
+						</div>
+						<div class="turbo">
+							<i class="fa-solid fa-hurricane fa-2x" id="turboIcon"></i>
+							<p>Turbo</p>
+						</div>
+					</div>
+					<div class="dmTitle">
+						<h3>DIRECT MESSAGES</h3>
+						<p>+</p>
+					</div>
 
-<body>
-    <nav>
-        <div>
-            <a href="">
-                <h1>Discordia</h1>
-            </a>
-        </div>
-        <div class="minMaxClose">
-            <a href="">
-                <i class="fa fa-window-minimize fa-2x" id="minimizeApp"></i>
-            </a>
-            <a href="">
-                <i class="fa-regular fa-square fa-2x" id="maximizeApp"></i>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-xmark fa-2x" id="closeApp"></i>
-            </a>
-        </div>
-    </nav>
-    <main>
-        <div class="sideBarContainer">
-            <div class="homeAndCallContainer">
-                <a href="">
-                    <img src="./assets/logofeliz.jpg" alt="Discord Home Logo" class="homeIcon">
-                </a>
-                <a href="">
-                    <img src="./assets/callImg.jpg" alt="Call Profile Picture" class="homeIcon">
-                </a>
-            </div>
-            <div class="centerX">
-                <div class="sideBarDivisor"></div>
-            </div>
-            <div class="serversContainer">
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP">1</p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP">12</p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP">123</p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP">1k+</p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP"></p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP"></p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP"></p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP"></p>
-                    </div>
-                </a>
-                <a href="" class="server">
-                    <img src="./assets/server1.jpg" alt="Server Picture" class="serverIcon">
-                    <div class="serverNotification">
-                        <p class="servNotifP"></p>
-                    </div>
-                </a>
-            </div>
-
-
-
-        </div>
-        <div class="chatsContainer">
-            <div class="searchContainer">
-                <input type="text" name="searchConver" id="searchConver" placeholder="Find or start a conversation" spellcheck="false">
-            </div>
-            <div class="profileContainer">
-                <a href="" class="profileInfo">
-                    <img src="./assets/callImg.jpg" alt="Server Picture" class="chatPhoto">
-                    <div class="chatOnline">
-                        <p>-</p>
-                    </div>
-                    <div class="profileUser">
-                        <h3>Nachota</h3>
-                        <p>#8755</p>
-                    </div>
-                </a>
-                <div class="callSettings">
-                    <i class="fa-solid fa-microphone fa-2x"></i>
-                    <i class="fa-solid fa-headphones fa-2x"></i>
-                    <i class="fa-solid fa-gear fa-2x"></i>
-                </div>
-            </div>
-            <div class="underSearch">
-                <div class="friendsTurbo">
-                    <div class="friends">
-                        <i class="fa-solid fa-person-rifle fa-2x" id="friendsIcon"></i>
-                        <p>Friends</p>
-                    </div>
-                    <div class="turbo">
-                        <i class="fa-solid fa-hurricane fa-2x" id="turboIcon"></i>
-                        <p>Turbo</p>
-                    </div>
-                </div>
-                <div class="dmTitle">
-                    <h3>DIRECT MESSAGES</h3>
-                    <p>+</p>
-                </div>
-
-
-
-                <div class="chhflghoh,yirklelñslhbñjghpspdh´d'gñnopfledhatList">
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOnline">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                            <p>Playing <b>with my dick</b></p>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatBusy">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOffline">
-                            <p>o</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOnline">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>pipi32</h3>
-                            <p>Playing <b>with my dick</b></p>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatBusy">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                            <p>Playing <b>with my dick</b></p>
-                        </div>
-                        
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOffline">
-                            <p>o</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOnline">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatBusy">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOffline">
-                            <p>o</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-                    <div class="chatShortcut">
-                        <img src="./assets/chatPic1.jpg" alt="Server Picture" class="chatPhoto">
-                        <div class="chatOnline">
-                            <p>-</p>
-                        </div>
-                        <div class="chatNameStatus">
-                            <h3>SantosZH</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="callAndChatContainer">
-            <div class="callContainer">
-                <div class="topCallContainer">
-                    <div class="topCallLeft">
-                        <i class="fa-solid fa-at"></i>
-                        <h4>Nachota</h4>
-                        <div class="onlineStatus"></div>
-                    </div>
-                    <div class="topCallRight">
-                        <i class="fa-solid fa-thumbtack" id="pinIcon"></i>
-                        <i class="fa-solid fa-user-plus"></i>
-                        <input class="callSearchInput" placeholder="Search" >
-                        <i class="fa-solid fa-download" id="downloadIcon" ></i>
-                        <i class="fa-solid fa-inbox"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                    </div>
-                </div>
-                <div class="region">
-
-                </div>
-                <div class="callPhoto">
-                    
-                </div>
-                <div class="callButtons">
-
-                </div>
-            </div>
-            <div class="chatContainer">
-                <p></p>
-
-            </div>
-        </div>
-    </main>
-</body>
-
+					<div class="chhflghoh,yirklelñslhbñjghpspdh´d'gñnopfledhatList">
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOnline">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+								<p>Playing <b>with my dick</b></p>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatBusy">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOffline">
+								<p>o</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOnline">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>pipi32</h3>
+								<p>Playing <b>with my dick</b></p>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatBusy">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+								<p>Playing <b>with my dick</b></p>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOffline">
+								<p>o</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOnline">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatBusy">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOffline">
+								<p>o</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+						<div class="chatShortcut">
+							<img
+								src="./assets/chatPic1.jpg"
+								alt="Server Picture"
+								class="chatPhoto"
+							/>
+							<div class="chatOnline">
+								<p>-</p>
+							</div>
+							<div class="chatNameStatus">
+								<h3>SantosZH</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="callAndChatContainer">
+				<div class="callContainer">
+					<div class="topCallContainer">
+						<div class="topCallLeft">
+							<i class="fa-solid fa-at"></i>
+							<a href="">
+								<h4>Nachota</h4>
+							</a>
+							<div class="onlineStatus"></div>
+						</div>
+						<div class="topCallRight">
+							<a href="">
+								<i class="fa-solid fa-thumbtack" id="pinIcon"></i>
+							</a>
+							<a href="">
+								<i class="fa-solid fa-user-plus"></i>
+							</a>
+							<input class="callSearchInput" placeholder="Search" />
+							<a href="">
+								<i class="fa-solid fa-download" id="downloadIcon"></i>
+							</a>
+							<a href="">
+								<i class="fa-solid fa-inbox"></i>
+							</a>
+							<a href="">
+								<i class="fa-solid fa-circle-question"></i>
+							</a>
+						</div>
+					</div>
+					<div class="region">
+						<p>region</p>
+						<p class="regionSelection">Automatic</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="callPhoto"></div>
+					<div class="callButtons"></div>
+				</div>
+				<div class="chatContainer">
+					<p></p>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
