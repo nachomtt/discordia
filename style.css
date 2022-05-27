@@ -219,7 +219,7 @@ FRIENDS CHAT AND PROFILE
     z-index: 2;
     border-top-left-radius: 15px;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: " search " "underS" "profileC";
 }
 
@@ -450,9 +450,8 @@ FRIENDS CHAT AND PROFILE
 .profileContainer {
 width: 100%;
 background-color:rgb(41, 43, 47);
-height: 90%;
-padding-top: 10px;
-padding-bottom: 5px;
+height: 100%;
+padding-top: 5px;
 z-index: 5;
 grid-area: profileC;
 display: flex;
@@ -524,6 +523,69 @@ align-items: center;
     z-index: 1;
 }
 
+.topCallContainer {
+    width: calc(100vw - 400px);
+    height: 50px;
+    borders: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.topCallLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+.topCallLeft i {
+    font-size: 28px;
+    color: rgb(150, 152, 157);
+    font-weight: 00;
+}
+.topCallLeft h4 {
+    font-size: 22px;
+    color: white;
+    padding-right: 2px;
+    font-weight: 500;
+}
+
+.onlineStatus {
+    width: 13px;
+    height: 13px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.topCallRight {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 29px;
+    padding-right: 20px;
+}
+.topCallRight i{
+        font-size: 24px;
+        color: rgb(150, 152, 157);
+        font-weight: 00;
+    
+}
+.callSearchInput {
+    width: 170px;
+    background-color: rgb(32, 34, 37);
+    border: 4px solid rgb(32, 34, 37);
+    border-radius: 5px;
+    color: rgb(150, 152, 157);
+    font-size: 20px;
+
+}
+
+#pinIcon {
+    position: relative;
+    rotate: 45°;
+}
+#downloadIcon {
+    color: lightgreen;
+    font-weight: 600;
+}
 .chatContainer {
     position: fixed;
     bottom: 0;
